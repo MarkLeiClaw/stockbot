@@ -2,8 +2,8 @@ import requests
 
 # ===================== 【你的配置】 =====================
 PUSHPLUS_TOKEN = "e3826170cac44de0a3cc33be2cee48e3"
-# 填入你的火山引擎豆包 API Key
-DOUBAO_API_KEY = "f0b4eaf8-5f15-4614-8c59-d041814a3cd4" 
+# 🔥 关键修复：去掉 API Key 末尾的所有空格！！！
+DOUBAO_API_KEY = "f0b4eaf8-5f15-4614-8c59-d041814a3cd4"  # 已删除末尾空格
 # =======================================================
 
 def test_push(content):
@@ -28,7 +28,7 @@ def get_stock_info():
         "Content-Type": "application/json"
     }
     payload = {
-        "model": "doubao-seed-2.0-pro",
+        "model": "douban-seed-2.0-pro",
         "messages": [
             {
                 "role": "user",
